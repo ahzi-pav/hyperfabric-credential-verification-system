@@ -1,0 +1,34 @@
+{
+    "name": "credential-verification-system",
+    "version": "1.0.0",
+    "description": "Credential verification system",
+    "main": "dist/app.js",
+    "scripts": {
+        "build": "tsc",
+        "serve": "ts-node src/app.ts"
+    },
+    "dependencies": {
+        "@grpc/grpc-js": "^1.10.1",
+        "@hyperledger/fabric-gateway": "^1.5.1",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "@tsconfig/node18": "^18.2.4",
+        "@types/body-parser": "^1.19.5",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^14.14.37",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5"
+    },
+    "proxy": "http://localhost:3001",
+    "engineStrict": true,
+    "author": "",
+    "license": "ISC"
+}
